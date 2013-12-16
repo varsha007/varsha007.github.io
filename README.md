@@ -1,4 +1,0 @@
-Fairty-Select
-=============
-
-Art website
