@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('../fonts/Museo700-Regular-webfont.ttf'),
+        url('../fonts/Museo700-Regular-webfont..eot'), /* IE9 */
+        url('../fonts/Museo700-Regular-webfont.woff');
+}
+
+@font-face {
+    font-family: 'port_font';
+    src: url('../fonts/RockSalt-webfont.ttf'),
+        url('../fonts/RockSalt-webfont..eot'), /* IE9 */
+        url('../fonts/RockSalt-webfont.woff');
+}
+
+@font-face {
+    font-family: 'port_fonts';
+    src: url('../fonts/fontawesome-webfont.ttf'),
+        url('../fonts/fontawesome-webfont..eot'), /* IE9 */
+        url('../fonts/fontawesome-webfont.woff'),
+        url('../fonts/fontawesome-webfont.svg');
+}
+
+$font-color:  #000305, #000, #0098c3, #f3f3f3, #999, #555, #fff, #383c3c;
+$background: #ebeded, #1f1f21, #1a171b, #3e3e40, #0098c3, #252528;
+/* ===========================
+   ========= Icons Font ======
+   =========================== */
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-size: inherit;
+  margin-right: 4px;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+ .icon-folder, .icon-envelope, .icon-users, .icon-home, .icon-github, .icon-facebook, .icon-linkedin, .icon-arrow-down{
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-envelope:before {
+  content: "\61";
+}
+.icon-home:before {
+  content: "\68";
+}
+.icon-users:before {
+  content: "\63";
+}
+.icon-folder:before {
+  content: "\65";
+}
+.icon-github:before {
+  content: "\67";
+}
+.icon-facebook:before {
+  content: "\66";
+}
+.icon-arrow-down:before {
+  content: "\64";
+}
+.icon-linkedin:before {
+  content: "\6c";
+}
+/* ===========================
+   ========= Headings ========
+   =========================== */
+h2 {font-size: 1.571em} /* 22px */
+h3 {font-size: 1.429em} /* 20px */
+h4 {font-size: 1.286em} /* 18px */
+h5 {font-size: 1.143em} /* 16px */
+h6 {font-size: 1em}   /* 14px */
+
+h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: .8em;
+}
+
+img { max-width: 100%; }
+
+ul, li { list-style-type: none; }

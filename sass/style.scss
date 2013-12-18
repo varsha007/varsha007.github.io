@@ -4,76 +4,10 @@
 	Description: Basic HTML5/CSS3 layout built on a responsive framework
 	Version: 1.0
 	Author: Varsha
-	
+
 */
-$font-color:  #000305, #000, #0098c3, #f3f3f3, #999, #555, #fff, #383c3c;
-$background: #ebeded, #1f1f21, #1a171b, #3e3e40, #0098c3, #252528;
+@import 'icon';
 
-@font-face {
-    font-family: 'myfont';
-    src: url('../fonts/Museo700-Regular-webfont.ttf'),
-        url('../fonts/Museo700-Regular-webfont..eot'), /* IE9 */
-        url('../fonts/Museo700-Regular-webfont.woff');
-}	
-
-/* ===========================
-   ========= Icons Font ====== 
-   =========================== */
-
-@font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	margin-right: 4px;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
- .icon-folder, .icon-envelope, .icon-users, .icon-home {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-}
-.icon-folder:before {
-	content: "\65";
-}
-.icon-mail:before {
-	content: "\7a";
-}
-.icon-users:before {
-	content: "\63";
-}
-.icon-home:before {
-	content: "\68";
-}
- 
-  
 body {
 	color: nth($font-color, 1);
 	font-size: 87.5%; /* Base font size: 14px */
@@ -85,16 +19,16 @@ body {
 }
 
 .wrap {
-	clear: both; 
-	margin: 0 auto; 
-	max-width: 970px;	
+	clear: both;
+	margin: 0 auto;
+	max-width: 970px;
 	img{
 		margin-top: 3%;
 	}
 }
-	
+
 /* ===========================
-   ========= Headings ======== 
+   ========= Headings ========
    =========================== */
 h2 {font-size: 1.571em}	/* 22px */
 h3 {font-size: 1.429em}	/* 20px */
@@ -113,25 +47,25 @@ img { max-width: 100%; }
 ul, li { list-style-type: none; }
 
 /* ===========================
-   ======= Anchor style ====== 
+   ======= Anchor style ======
    =========================== */
 a {
 	outline: 0;
 	padding: 0 1px;
 	text-decoration: none;
 	color: nth($font-color,2);
-	&:hover {	
+	&:hover {
 		color: nth($font-color,3);
 		text-decoration: none;
 	}
 	img {
-		border: 0px; 
+		border: 0px;
 		text-decoration: none;
 	}
 }
 
 /* ===========================
-   ===== Main Navigation ===== 
+   ===== Main Navigation =====
    =========================== */
 
 .mainHeader {
@@ -144,8 +78,8 @@ a {
 	width: 100%;
 	color: nth($font-color,4);
 	padding: 1%;
-    h2 { float: left; margin: 0;}	
-   
+    h2 { float: left; margin: 0;}
+
     nav{
 		font-size: 1.143em;
 		line-height: 1.3em;
@@ -156,7 +90,7 @@ a {
 			display: inline-block;
 			padding: 5px 20px;
 			text-decoration: none;
-			&:hover { 
+			&:hover {
 				font-weight: normal;
 				color: nth($font-color,3);
 				text-shadow: none !important;
@@ -165,15 +99,15 @@ a {
     }
 
     ul {
-      margin: 0 auto; 
+      margin: 0 auto;
 	    li {
-		    display: inline; 
+		    display: inline;
 	    }
     }
 }
 
 /* ===========================
-   ======= Content Area ====== 
+   ======= Content Area ======
    =========================== */
 
 .mainContent {
@@ -187,13 +121,13 @@ a {
 		float: left;
 		border-radius: 5px;
 		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;	
+		-webkit-border-radius: 5px;
 		.topcontent {
 			background-color: nth($background, 1);
 			border-radius: 5px;
 			-moz-border-radius: 5px;
-			-webkit-border-radius: 5px;	
-			padding: 3% 5%;	
+			-webkit-border-radius: 5px;
+			padding: 3% 5%;
 			margin-bottom: 3%;
 			text-align: justify;
 		}
@@ -205,7 +139,7 @@ a {
 	}
 
 	/* ===========================
-       ======== Sidebar ========== 
+       ======== Sidebar ==========
        =========================== */
 
 	.top-sidebar {
@@ -214,14 +148,14 @@ a {
 		margin-left: 2%;
 		border-radius: 5px;
 		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;	
-		background-color: nth($background, 1);	
+		-webkit-border-radius: 5px;
+		background-color: nth($background, 1);
 		padding: 2% 3%;
 		margin-bottom: 3%;
 	}
 
 	 /* ===========================
-	   ========= Contact ========== 
+	   ========= Contact ==========
 	   =========================== */
 
     .login-block {
@@ -231,11 +165,11 @@ a {
 		margin-left: 2%;
 		border-radius: 5px;
 		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;	
+		-webkit-border-radius: 5px;
 		 -moz-box-shadow:0 0 10px #333333;
 	    -webkit-box-shadow:0 0 10px #333333;
 	    box-shadow:0 0 10px #333333;
-		background-color: nth($background, 1);	
+		background-color: nth($background, 1);
 		padding: 2% 3%;
 		margin-bottom: 3%;
 		form {
@@ -243,7 +177,7 @@ a {
 	     padding:20px;
 		}
 	}
-}	
+}
 
 .textbox {
 	border: none;
@@ -257,7 +191,7 @@ a {
 	transition: background-color .2s linear;
 	margin-bottom: 1em;
 
-	&:hover{ background: nth($background, 3); } 
+	&:hover{ background: nth($background, 3); }
 }
 
 .button {
@@ -278,24 +212,24 @@ a {
 
 
 /* ===========================
-   ========= Footer ========== 
+   ========= Footer ==========
    =========================== */
 
 .mainFooter {
 	width: 100%;
 	float: left;
 	background-color: nth($background, 6);
-	color: #383c3c;	
+	color: #383c3c;
 	text-align: center;
 	letter-spacing: 1px;
-	
+
 	ul { width: 25%; margin: 0 auto; }
-     
+
     li { float: left; margin-right: 6%; }
-     
+
     img { margin: 0;}
 
-    a { 
+    a {
      	color: nth($font-color, 8);
      	&:hover { color: nth($font-color, 3); }
 	}
@@ -305,14 +239,14 @@ a {
 
 
 /* ===========================
-   ====== Media Queries ====== 
+   ====== Media Queries ======
    =========================== */
 
 @media only screen and (min-width : 150px) and (max-width : 780px)
 {
 	.wrap {
-		clear: both; 
-		margin: 0 auto; 
+		clear: both;
+		margin: 0 auto;
 		width: 100%;
 		font-size: 90%;
 		img { margin-top: 17%; }
@@ -320,10 +254,10 @@ a {
 
 	.mainHeader {
 		 h2 { float:none; }
-	    nav{ 
-			float: none; 
-			line-height: inherit; 
-			font-size: inherit; 
+	    nav{
+			float: none;
+			line-height: inherit;
+			font-size: inherit;
 			ul { padding: 2% 0;	}
 			li {
 				margin: 0 auto;
@@ -333,9 +267,9 @@ a {
 				display: inline;
 				padding: 1em 0.6em;
 			}
-		}	
-	}	
-	
+		}
+	}
+
 	.mainContent {
 		margin-top: 4%;
 		margin-bottom: 5%;
@@ -354,7 +288,7 @@ a {
 			margin-left: 0;
 			padding: 1% 7%;
 			margin-bottom: 0;
-			p { width: 90%; }		
+			p { width: 90%; }
 		}
 
 		.login-block {
@@ -376,6 +310,6 @@ a {
 		padding-left: 0;
 		p {
 			width: 86%;
-		}	
-	}	
+		}
+	}
 }

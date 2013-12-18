@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PORTFOLIO</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/portfolio.css" type="text/css" />
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $(".scroll").click(function(){
+    console.log("test");
+    $(".content").animate({bottom:'50px'});
+  });
+
+});
+</script>
+</head>
+
+<body>
+  <header>
+    <nav class= "social">
+   <ul>
+    <li><a href="https://github.com/varsha007"><span aria-hidden="true" data-icon="g"></span></a></li>
+    <li><a href="http://www.facebook.com"><span aria-hidden="true" data-icon="f"></span></a></li>
+    <li><a href="http://www.linkedin.com/pub/varsha/19/863/4bb"><span aria-hidden="true" data-icon='l'></span></a></li>
+   </ul>
+  </nav>
+  <article class="objective">
+   <img src="img/FED.png">
+   <h1>Front End Developer</h1>
+   <p>I am a front-end developer and software engineer who truly understands the application development cycle. I am motivated, well organized, and competent in the design and implementation of modern web-based applications. I care about code quality and constantly seek to learn new web development skills. I enjoy working with teams who share my passion for organized development workflows and clean code.
+   </p>
+   <div>
+    <span class="scroll" aria-hidden="true" data-icon="d"></span>
+    <h6>Press it</h6>
+   </div>
+  </article>
+  </header>
+  <section class="content">
+    <h1>Varsha</h1>
+  </section>
+</body>
+ </html>
