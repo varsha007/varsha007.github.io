@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 @font-face {
   font-family: 'myfont';
   src: url("../fonts/Museo700-Regular-webfont.ttf"), url("../fonts/Museo700-Regular-webfont..eot"), url("../fonts/Museo700-Regular-webfont.woff"); }
@@ -39,7 +40,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-folder, .icon-envelope, .icon-users, .icon-home, .icon-github, .icon-facebook, .icon-linkedin, .icon-arrow-down {
+.icon-folder, .icon-envelope, .icon-users, .icon-home, .icon-github, .icon-facebook, .icon-linkedin, .icon-arrow-down, .icon-arrow-up {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -72,6 +73,9 @@ you can use the generic selector below, but it's slower:
 
 .icon-linkedin:before {
   content: "\6c"; }
+
+.icon-arrow-up:before {
+  content: "\75"; }
 
 /* ===========================
    ========= Headings ========
@@ -128,11 +132,20 @@ header {
 h1 {
   font-size: 2.5em; }
 
+h2 {
+  line-height: 0.1;
+  font-size: 25px;
+  display: none; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
 p {
   font-size: 1.3em;
   margin: 0 4em 2em;
   color: #ebeded;
-  font-family: "port_font";
+  font-family: 'PT Sans', sans-serif;
   letter-spacing: 2px; }
 
 nav {
@@ -140,7 +153,6 @@ nav {
   line-height: 1.3em;
   float: right;
   text-align: left;
-  margin-right: 8em;
   padding-top: 12px; }
   nav a {
     color: #f3f3f3;
@@ -173,8 +185,7 @@ div {
       opacity: 0.4; }
   div h6 {
     margin: 0;
-    font-size: 13px;
-    font-family: cursive; }
+    font-size: 13px; }
 
 .content {
   position: absolute;
@@ -182,4 +193,50 @@ div {
   background-color: #3a75bc;
   text-align: center;
   padding: 30px 0;
-  height: 400px; }
+  height: 600px; }
+  .content .btn {
+    background: #ebeded;
+    color: #3a75bc;
+    line-height: 1.5;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 18px;
+    border: 0;
+    opacity: 0.7;
+    padding: 5px 10px; }
+    .content .btn:hover {
+      background: orange;
+      color: white;
+      opacity: 1; }
+  .content .kwicks span {
+    color: white; }
+
+#fluid-example-container {
+  margin: 50px 30px; }
+
+.kwicks {
+  height: 100px; }
+
+.kwicks > li {
+  height: 100px; }
+
+#panel-1 {
+  background-color: #53b388; }
+
+#panel-2 {
+  background-color: #5a69a9; }
+
+#panel-3 {
+  background-color: #c26468; }
+
+#panel-4 {
+  background-color: #bf7cc7; }

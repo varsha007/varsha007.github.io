@@ -6,15 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/portfolio.css" type="text/css" />
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-  <script>
-  $(document).ready(function(){
-  $(".scroll").click(function(){
-    console.log("test");
-    $(".content").animate({bottom:'50px'});
-  });
-
-});
-</script>
+  <link rel='stylesheet' type='text/css' href='css/jquery.kwicks.min.css' />
+  <script src="js/jquery.kwicks.min.js"></script>
+  <script src="js/portfolio.js"></script>
 </head>
 
 <body>
@@ -33,12 +27,26 @@
    </p>
    <div>
     <span class="scroll" aria-hidden="true" data-icon="d"></span>
-    <h6>Press it</h6>
+    <h6>Scroll Down</h6>
    </div>
   </article>
   </header>
   <section class="content">
-    <h1>Varsha</h1>
+    <h1>Hi, Its me Varsha</h1>
+    <p>I’m a Front end Developer based in Canada. I build crazy things for Web and Mobile. I hope you enjoy my work. If you have a new project or want to know more about Web/Mobile Stuff. Let me know, i’d love to help.
+    </p>
+    <button class="btn"><span class="btn-icon" data-icon="e"></span> Lets Check out my Work</button>
+    <div id='fluid-example-container'>
+        <ul class='kwicks kwicks-horizontal'>
+            <li id='panel-1'><h2><a href="http://varsha007.github.io/farity.html">Fairty-Art</a></h2></li>
+            <li id='panel-2'><h2><a href="http://varsha007.github.io/responsive_theme.html">Responsive</a></h2></li>
+            <li id='panel-3'><h2><a href="http://www.infoactive.com">Infoactive</a></h2></li>
+        </ul>
+    </div>
+    <div>
+      <span class="scroll" aria-hidden="true" data-icon="u"></span>
+      <h6>Back To Top</h6>
+   </div>
   </section>
-</body>
+ </body>
  </html>

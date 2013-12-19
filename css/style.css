@@ -47,7 +47,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-folder, .icon-envelope, .icon-users, .icon-home, .icon-github, .icon-facebook, .icon-linkedin, .icon-arrow-down {
+.icon-folder, .icon-envelope, .icon-users, .icon-home, .icon-github, .icon-facebook, .icon-linkedin, .icon-arrow-down, .icon-arrow-up {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -80,6 +80,9 @@ you can use the generic selector below, but it's slower:
 
 .icon-linkedin:before {
   content: "\6c"; }
+
+.icon-arrow-up:before {
+  content: "\75"; }
 
 /* ===========================
    ========= Headings ========

@@ -1,6 +1,6 @@
 @import 'bourbon/bourbon';
 @import 'icon';
-
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 body {
   color: white;
   font-size: 87.5%; /* Base font size: 14px */
@@ -20,11 +20,17 @@ header {
 h1 {
   font-size: 2.5em;
 }
+h2 {
+  line-height: 0.1;
+  font-size: 25px;
+  display: none;
+}
+a { text-decoration: none; color: white;}
 p {
   font-size: 1.3em;
   margin: 0 4em 2em;
   color: nth($background,1);
-  font-family: "port_font";
+  font-family: 'PT Sans', sans-serif;
   letter-spacing: 2px;
 }
 nav{
@@ -32,7 +38,6 @@ nav{
     line-height: 1.3em;
     float: right;
     text-align: left;
-    margin-right: 8em;
     padding-top: 12px;
     a{
       color: nth($font-color,4);
@@ -74,14 +79,49 @@ div {
   h6{
     margin: 0;
     font-size: 13px;
-    font-family: cursive;
   }
 }
 .content {
   position: absolute;
-width: 100%;
+  width: 100%;
   background-color: #3a75bc;
-text-align: center;
-padding: 30px 0;
-height: 400px;
+  text-align: center;
+  padding: 30px 0;
+  height: 600px;
+  .btn {
+    background:nth($background,1);
+    color: #3a75bc;
+    line-height: 1.5;
+    @include transition (all 2.0s ease-in-out);
+    @include border-top-radius(5px);
+    @include border-bottom-radius(5px);
+    @include border-left-radius(5px);
+    @include border-right-radius(5px);
+    font-size: 18px;
+    border: 0;
+    opacity: 0.7;
+    padding: 5px 10px;
+    &:hover {
+      background: orange;
+      color: white;
+      opacity:1;
+    }
+  }
+  .kwicks span {
+    color: white;
+  }
+
 }
+#fluid-example-container {
+  margin: 50px 30px;
+}
+.kwicks {
+  height: 100px;
+}
+.kwicks > li {
+  height: 100px;
+}
+#panel-1 { background-color: #53b388; }
+#panel-2 { background-color: #5a69a9; }
+#panel-3 { background-color: #c26468; }
+#panel-4 { background-color: #bf7cc7; }
