@@ -1,5 +1,7 @@
 
-
+$(document).ready(function() {
+  $("body").iealert();
+});
 
  $(document).ready(function() {
   // Show or hide the sticky footer button
