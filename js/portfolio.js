@@ -1,15 +1,20 @@
-$(document).ready(function(){
-  $(".scroll").click(function(){
-    console.log("test");
-    $('html, body').animate({scrollTop: '400px'}, 300);
-  });
-});
 
-$(document).ready(function(){
-  $("content .scroll").click(function(){
-    console.log("test");
-    $('html, body').animate({scrollTop: '0'}, 300);
+
+
+ $(document).ready(function() {
+  // Show or hide the sticky footer button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+    $('.top').fadeIn(200);
+    } else {
+    $('.top').fadeOut(200);}
   });
+
+ // Animate the scroll to top
+  $('.top').click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, 300);
+  })
 });
 
 

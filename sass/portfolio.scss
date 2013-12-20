@@ -15,7 +15,7 @@ body {
   background-size: cover;
 }
 header {
-  margin: 20px 60px;
+  margin: 40px 60px;
 }
 h1 {
   font-size: 2.5em;
@@ -38,7 +38,6 @@ nav{
     line-height: 1.3em;
     float: right;
     text-align: left;
-    padding-top: 12px;
     a{
       color: nth($font-color,4);
       display: inline-block;
@@ -60,8 +59,8 @@ ul {
 }
 
 .objective {
-  margin: 0 auto;
-  padding-top: 100px;
+  margin: 120px 0;
+  clear: both;
   text-align: center;
   img {
     width: 140px;
@@ -81,13 +80,12 @@ div {
     font-size: 13px;
   }
 }
-.content {
-  position: absolute;
+#content {
   width: 100%;
   background-color: #3a75bc;
   text-align: center;
-  padding: 30px 0;
-  height: 600px;
+  padding: 12px 0;
+  height: 300px;
   .btn {
     background:nth($background,1);
     color: #3a75bc;
@@ -107,19 +105,23 @@ div {
       opacity:1;
     }
   }
-  .kwicks span {
-    color: white;
-  }
-
 }
 #fluid-example-container {
-  margin: 50px 30px;
+  margin-bottom: 120px;
+}
+.top{
+  color: white;
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  display: none;
 }
 .kwicks {
-  height: 100px;
+  height: 200px;
 }
 .kwicks > li {
-  height: 100px;
+  height: 200px;
+  text-align: center;
 }
 #panel-1 { background-color: #53b388; }
 #panel-2 { background-color: #5a69a9; }
