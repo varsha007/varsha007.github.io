@@ -138,8 +138,7 @@ h1 {
 
 h2 {
   line-height: 0.1;
-  font-size: 25px;
-  display: none; }
+  font-size: 25px; }
 
 a {
   text-decoration: none;
@@ -232,6 +231,10 @@ div {
 
 .kwicks {
   height: 200px; }
+  .kwicks p {
+    font-size: 14px;
+    text-align: left;
+    display: none; }
 
 .kwicks > li {
   height: 200px;

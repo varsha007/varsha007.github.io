@@ -27,6 +27,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $(".btn").click(function(){
-    $(".kwicks h2").show();
+    $(".kwicks p").show();
   });
 });
