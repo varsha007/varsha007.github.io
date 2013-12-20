@@ -29,6 +29,13 @@ $background: #ebeded, #1f1f21, #1a171b, #3e3e40, #0098c3, #252528, #2dcc70;
 @font-face {
   font-family: 'icomoon';
   src:url('../fonts/icomoon.eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
   src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.woff') format('woff'),
     url('../fonts/icomoon.ttf') format('truetype'),
