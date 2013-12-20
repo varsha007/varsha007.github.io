@@ -41,10 +41,11 @@ nav{
     line-height: 1.3em;
     float: right;
     text-align: left;
+    margin-right: 12px;
     a{
       color: nth($font-color,4);
       display: inline-block;
-      padding: 5px 20px;
+      padding: 5px 15px;
       text-decoration: none;
       font-size: 40px;
       &:hover {
