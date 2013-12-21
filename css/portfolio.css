@@ -1,15 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 @font-face {
   font-family: 'myfont';
-  src: url("../fonts/Museo700-Regular-webfont.ttf"), url("../fonts/Museo700-Regular-webfont..eot"), url("../fonts/Museo700-Regular-webfont.woff"); }
+  src: url("../fonts/Museo700-Regular-webfont.eot");
+  src: url("../fonts/Museo700-Regular-webfont.ttf") format("truetype"), url("../fonts/Museo700-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo700-Regular-webfont.woff") format("woff"); }
 
 @font-face {
   font-family: 'port_font';
-  src: url("../fonts/RockSalt-webfont.ttf"), url("../fonts/RockSalt-webfont..eot"), url("../fonts/RockSalt-webfont.woff"); }
+  src: url("../fonts/RockSalt-webfont.ttf") format("truetype"), url("../fonts/RockSalt-webfont.eot") format("embedded-opentype"), url("../fonts/RockSalt-webfont.woff") format("woff"); }
 
 @font-face {
   font-family: 'port_fonts';
-  src: url("../fonts/fontawesome-webfont.ttf"), url("../fonts/fontawesome-webfont..eot"), url("../fonts/fontawesome-webfont.woff"), url("../fonts/fontawesome-webfont.svg"); }
+  src: url("../fonts/fontawesome-webfont.ttf"), url("../fonts/fontawesome-webfont.eot"), url("../fonts/fontawesome-webfont.woff"), url("../fonts/fontawesome-webfont.svg"); }
 
 /* ===========================
    ========= Icons Font ======

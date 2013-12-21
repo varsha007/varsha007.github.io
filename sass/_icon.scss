@@ -1,21 +1,22 @@
 @font-face {
     font-family: 'myfont';
-    src: url('../fonts/Museo700-Regular-webfont.ttf'),
-        url('../fonts/Museo700-Regular-webfont..eot'), /* IE9 */
-        url('../fonts/Museo700-Regular-webfont.woff');
+    src: url('../fonts/Museo700-Regular-webfont.eot');
+    src: url('../fonts/Museo700-Regular-webfont.ttf') format('truetype'),
+        url('../fonts/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE9 */
+        url('../fonts/Museo700-Regular-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'port_font';
-    src: url('../fonts/RockSalt-webfont.ttf'),
-        url('../fonts/RockSalt-webfont..eot'), /* IE9 */
-        url('../fonts/RockSalt-webfont.woff');
+    src: url('../fonts/RockSalt-webfont.ttf') format('truetype'),
+        url('../fonts/RockSalt-webfont.eot') format('embedded-opentype'), /* IE9 */
+        url('../fonts/RockSalt-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'port_fonts';
     src: url('../fonts/fontawesome-webfont.ttf'),
-        url('../fonts/fontawesome-webfont..eot'), /* IE9 */
+        url('../fonts/fontawesome-webfont.eot'), /* IE9 */
         url('../fonts/fontawesome-webfont.woff'),
         url('../fonts/fontawesome-webfont.svg');
 }
