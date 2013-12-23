@@ -41,7 +41,7 @@ h2 {
 a { text-decoration: none; color: white;}
 p {
   font-size: 1.3em;
-  margin: 0 4em 2em;
+  margin: 0 0 2em;
   color: nth($background,1);
   font-family: 'PT Sans', sans-serif;
   letter-spacing: 2px;
@@ -110,27 +110,8 @@ div {
   width: 100%;
   background-color: #3a75bc;
   text-align: center;
-  padding: 12px 0;
+  padding: 1em 3em;
   height: 260px;
-  .btn {
-    background:nth($background,1);
-    color: #3a75bc;
-    line-height: 1.5;
-    @include transition (all 2.0s ease-in-out);
-    @include border-top-radius(5px);
-    @include border-bottom-radius(5px);
-    @include border-left-radius(5px);
-    @include border-right-radius(5px);
-    font-size: 18px;
-    border: 0;
-    opacity: 0.7;
-    padding: 5px 10px;
-    &:hover {
-      background: orange;
-      color: white;
-      opacity:1;
-    }
-  }
 }
 #fluid-example-container {
   margin-bottom: 120px;
