@@ -225,7 +225,7 @@ div {
   background-color: #3a75bc;
   text-align: center;
   padding: 12px 0;
-  height: 250px; }
+  height: 260px; }
   #content .btn {
     background: #ebeded;
     color: #3a75bc;
@@ -266,16 +266,20 @@ div {
 .kwicks {
   height: 200px; }
   .kwicks p {
-    font-size: 14px;
+    font-size: 22px;
+    padding-top: 2em;
     text-align: center;
     width: 100%;
     margin: 0; }
-  .kwicks a:hover {
-    color: black; }
 
 .kwicks > li {
-  height: 200px;
+  height: 300px;
   text-align: center; }
+
+#panel-1, #panel-2, #panel-3 {
+  opacity: 0.5; }
+  #panel-1:hover, #panel-2:hover, #panel-3:hover {
+    opacity: 1; }
 
 #panel-1 {
   background-color: #53b388; }

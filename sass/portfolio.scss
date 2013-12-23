@@ -111,7 +111,7 @@ div {
   background-color: #3a75bc;
   text-align: center;
   padding: 12px 0;
-  height: 250px;
+  height: 260px;
   .btn {
     background:nth($background,1);
     color: #3a75bc;
@@ -148,18 +148,21 @@ div {
 .kwicks {
   height: 200px;
   p {
-    font-size:14px;
+    font-size:22px;
+    padding-top: 2em;
     text-align:center;
     width: 100%;
     margin:0;
   }
-  a:hover {
-    color: black;
-  }
 }
 .kwicks > li {
-  height: 200px;
+  height: 300px;
   text-align: center;
+}
+
+#panel-1, #panel-2, #panel-3 {
+  opacity: 0.5;
+ &:hover {opacity:1;}
 }
 #panel-1 { background-color: #53b388; }
 #panel-2 { background-color: #5a69a9; }
