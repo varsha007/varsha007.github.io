@@ -1,5 +1,9 @@
 @import 'bourbon/bourbon';
+@import "neat/neat";
 @import 'icon';
+
+$mobile: new-breakpoint(max-width 480px 4);
+
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 body {
   color: white;
@@ -20,9 +24,15 @@ img {
 }
 header {
   margin: 40px 60px;
+    @include media($mobile){
+    margin: 40px 0px;
+  }
 }
 h1 {
   font-size: 2.5em;
+  @include media($mobile){
+    font-size: 2em;
+  }
 }
 h2 {
   line-height: 0.1;
@@ -35,25 +45,34 @@ p {
   color: nth($background,1);
   font-family: 'PT Sans', sans-serif;
   letter-spacing: 2px;
+  @include media($mobile){
+    font-size: 1em;
+    margin: 0 0 2em;
+  }
 }
 nav{
-    font-size: 1.143em;
-    line-height: 1.3em;
-    float: right;
-    text-align: left;
-    margin-right: 12px;
-    a{
-      color: nth($font-color,4);
-      display: inline-block;
-      padding: 5px 15px;
-      text-decoration: none;
-      font-size: 40px;
-      &:hover {
-        font-weight: normal;
-        color: nth($font-color,3);
-        text-shadow: none !important;
-      }
+  font-size: 1.143em;
+  line-height: 1.3em;
+  float: right;
+  text-align: left;
+  margin-right: 12px;
+  a{
+    color: nth($font-color,4);
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 40px;
+    &:hover {
+      font-weight: normal;
+      color: nth($font-color,3);
+      text-shadow: none !important;
     }
+  }
+   @include media($mobile){
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+   }
 }
 ul {
   margin: 0 auto;
@@ -66,6 +85,9 @@ ul {
   margin: 120px 0;
   clear: both;
   text-align: center;
+    @include media($mobile){
+   margin: 40px 0 140px;
+  }
   img {
     width: 140px;
   }
@@ -89,7 +111,7 @@ div {
   background-color: #3a75bc;
   text-align: center;
   padding: 12px 0;
-  height: 300px;
+  height: 250px;
   .btn {
     background:nth($background,1);
     color: #3a75bc;
@@ -119,13 +141,20 @@ div {
   bottom: 1em;
   right: 2em;
   display: none;
+    @include media($mobile){
+     right: 1em;
+  }
 }
 .kwicks {
   height: 200px;
   p {
     font-size:14px;
-    text-align:left;
-    display: none;
+    text-align:center;
+    width: 100%;
+    margin:0;
+  }
+  a:hover {
+    color: black;
   }
 }
 .kwicks > li {
@@ -136,3 +165,10 @@ div {
 #panel-2 { background-color: #5a69a9; }
 #panel-3 { background-color: #c26468; }
 #panel-4 { background-color: #bf7cc7; }
+
+/***************Mobile*******************/
+
+
+
+
+

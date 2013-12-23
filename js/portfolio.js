@@ -24,13 +24,15 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('.kwicks').kwicks({
-      maxSize : '75%',
+      maxSize : '70%',
       behavior: 'menu'
   });
 });
 
 $(document).ready(function() {
-  $(".btn").click(function(){
-    $(".kwicks p").show();
+  $(".kwicks a").hover(function(){
+  console.log('test');
+    $(this).find('li a').css( "display", "none" );
+
   });
 });
