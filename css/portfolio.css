@@ -146,10 +146,11 @@ header {
   margin: 40px 60px; }
   @media screen and (max-width: 480px) {
     header {
-      margin: 40px 0px; } }
+      margin: 20px 0px; } }
 
 h1 {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  margin-bottom: 0.5em; }
   @media screen and (max-width: 480px) {
     h1 {
       font-size: 2em; } }
@@ -170,8 +171,9 @@ p {
   letter-spacing: 2px; }
   @media screen and (max-width: 480px) {
     p {
-      font-size: 1em;
-      margin: 0 0 2em; } }
+      font-size: 1.2em;
+      margin: 0 0 2em;
+      line-height: 1.2; } }
 
 nav {
   font-size: 1.143em;
@@ -225,29 +227,59 @@ div {
   background-color: #3a75bc;
   text-align: center;
   padding: 1em 3em;
-  height: 260px; }
+  height: 290px; }
+  @media screen and (max-width: 480px) {
+    #content {
+      height: 310px; } }
 
 #fluid-example-container {
   margin-bottom: 120px; }
+
+.btn {
+  background: #ebeded;
+  color: #3a75bc;
+  line-height: 1.5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 18px;
+  border: 0;
+  opacity: 0.7;
+  padding: 5px 10px; }
+  .btn:hover {
+    opacity: 1;
+    background: wheat;
+    cursor: pointer; }
 
 .top {
   color: white;
   position: fixed;
   bottom: 1em;
   right: 2em;
-  display: none; }
+  display: none;
+  text-align: center; }
   @media screen and (max-width: 480px) {
     .top {
       right: 1em; } }
 
 .kwicks {
-  height: 200px; }
+  height: 300px; }
   .kwicks p {
     font-size: 22px;
-    padding-top: 2em;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
     text-align: center;
     width: 100%;
     margin: 0; }
+    @media screen and (max-width: 480px) {
+      .kwicks p {
+        font-size: 18px;
+        padding-top: 1em; } }
 
 .kwicks > li {
   height: 300px;
