@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('.kwicks').kwicks({
-      maxSize : '60%',
+      maxSize : '55%',
       behavior: 'menu'
   });
 });

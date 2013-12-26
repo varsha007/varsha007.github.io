@@ -156,8 +156,7 @@ h1 {
       font-size: 2em; } }
 
 h2 {
-  line-height: 0.1;
-  font-size: 25px; }
+  font-size: 0.8em; }
 
 a {
   text-decoration: none;
@@ -268,22 +267,32 @@ div {
       right: 1em; } }
 
 .kwicks {
-  height: 300px; }
+  height: 350px; }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .kwicks {
+      height: 440px; } }
+  @media screen and (max-width: 480px) {
+    .kwicks {
+      height: 500px; } }
   .kwicks p {
     font-size: 22px;
-    padding-top: 1.2em;
     padding-bottom: 1em;
     text-align: center;
     width: 100%;
     margin: 0; }
     @media screen and (max-width: 480px) {
       .kwicks p {
-        font-size: 18px;
-        padding-top: 1em; } }
+        font-size: 18px; } }
 
 .kwicks > li {
-  height: 300px;
+  height: 350px;
   text-align: center; }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .kwicks > li {
+      height: 440px; } }
+  @media screen and (max-width: 480px) {
+    .kwicks > li {
+      height: 500px; } }
 
 #panel-1, #panel-2, #panel-3 {
   opacity: 0.5; }

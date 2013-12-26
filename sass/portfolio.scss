@@ -3,6 +3,7 @@
 @import 'icon';
 
 $mobile: new-breakpoint(max-width 480px 4);
+$tablet: new-breakpoint(min-width 481px max-width 768px 6);
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 body {
@@ -36,8 +37,7 @@ h1 {
   }
 }
 h2 {
-  line-height: 0.1;
-  font-size: 25px;
+  font-size: 0.8em;
 }
 a { text-decoration: none; color: white;}
 p {
@@ -160,29 +160,38 @@ div {
   }
 }
 .kwicks {
-  height: 300px;
+  height: 350px;
+  @include media($tablet){
+    height:440px;
+  }
+   @include media($mobile){
+    height: 500px;
+  }
   p {
     font-size:22px;
-    padding-top: 1.2em;
     padding-bottom: 1em;
     text-align:center;
     width: 100%;
     margin:0;
     @include media($mobile){
       font-size: 18px;
-      padding-top: 1em;
      }
   }
 }
 .kwicks > li {
-  height: 300px;
+  height: 350px;
   text-align: center;
-
+    @include media($tablet){
+    height:440px;
+  }
+   @include media($mobile){
+   height: 500px;
+ }
 }
 
 #panel-1, #panel-2, #panel-3 {
   opacity: 0.5;
- &:hover {opacity:1;}
+ &:hover { opacity:1;}
 }
 #panel-1 { background-color: #53b388; }
 #panel-2 { background-color: #5a69a9; }
