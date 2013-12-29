@@ -48,7 +48,7 @@ p {
   letter-spacing: 2px;
   @include media($mobile){
     font-size: 1.2em;
-    margin: 0 0 2em;
+    margin: 0 0 1em;
     line-height: 1.2;
   }
 }
@@ -88,7 +88,7 @@ ul {
   clear: both;
   text-align: center;
     @include media($mobile){
-   margin: 40px 0 140px;
+   margin: 20px 0 10px;
   }
   img {
     width: 140px;
@@ -117,14 +117,15 @@ div {
    @include media($mobile){
     height: 310px;
   }
+  h2 {
+    font-size: 1.4em;
+  }
 }
 #fluid-example-container {
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
-.mobile {
-   @include media($mobile){
-
-  }
+#mobile-container {
+  display:none;
 }
 .btn {
     background: #ebeded;
@@ -155,17 +156,11 @@ div {
   right: 2em;
   display: none;
   text-align: center;
-    @include media($mobile){
-     right: 1em;
-  }
 }
 .kwicks {
   height: 350px;
   @include media($tablet){
     height:440px;
-  }
-   @include media($mobile){
-    height: 500px;
   }
   p {
     font-size:22px;
@@ -173,9 +168,6 @@ div {
     text-align:center;
     width: 100%;
     margin:0;
-    @include media($mobile){
-      font-size: 18px;
-     }
   }
 }
 .kwicks > li {
@@ -184,9 +176,6 @@ div {
     @include media($tablet){
     height:440px;
   }
-   @include media($mobile){
-   height: 500px;
- }
 }
 
 #panel-1, #panel-2, #panel-3 {
@@ -198,9 +187,39 @@ div {
 #panel-3 { background-color: #c26468; }
 #panel-4 { background-color: #bf7cc7; }
 
-/***************Mobile*******************/
 
 
+@include media($mobile){
+  #fluid-example-container {
+    display: none;
+  }
+  .top {
+    right: 0.1em;
+  }
+  #mobile-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4em;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      width: 100%;
+      display: block;
+      padding: 1em 0.5em;
+    }
+    p {
+     font-size: 0.5em;
+      margin: 1em 0;
+      line-height: 1;
+    }
+    h2 {
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+}
 
 
 

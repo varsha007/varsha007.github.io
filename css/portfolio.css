@@ -171,7 +171,7 @@ p {
   @media screen and (max-width: 480px) {
     p {
       font-size: 1.2em;
-      margin: 0 0 2em;
+      margin: 0 0 1em;
       line-height: 1.2; } }
 
 nav {
@@ -207,7 +207,7 @@ ul {
   text-align: center; }
   @media screen and (max-width: 480px) {
     .objective {
-      margin: 40px 0 140px; } }
+      margin: 20px 0 10px; } }
   .objective img {
     width: 140px; }
 
@@ -230,9 +230,14 @@ div {
   @media screen and (max-width: 480px) {
     #content {
       height: 310px; } }
+  #content h2 {
+    font-size: 1.4em; }
 
 #fluid-example-container {
-  margin-bottom: 120px; }
+  margin-bottom: 150px; }
+
+#mobile-container {
+  display: none; }
 
 .btn {
   background: #ebeded;
@@ -262,27 +267,18 @@ div {
   right: 2em;
   display: none;
   text-align: center; }
-  @media screen and (max-width: 480px) {
-    .top {
-      right: 1em; } }
 
 .kwicks {
   height: 350px; }
   @media screen and (min-width: 481px) and (max-width: 768px) {
     .kwicks {
       height: 440px; } }
-  @media screen and (max-width: 480px) {
-    .kwicks {
-      height: 500px; } }
   .kwicks p {
     font-size: 22px;
     padding-bottom: 1em;
     text-align: center;
     width: 100%;
     margin: 0; }
-    @media screen and (max-width: 480px) {
-      .kwicks p {
-        font-size: 18px; } }
 
 .kwicks > li {
   height: 350px;
@@ -290,9 +286,6 @@ div {
   @media screen and (min-width: 481px) and (max-width: 768px) {
     .kwicks > li {
       height: 440px; } }
-  @media screen and (max-width: 480px) {
-    .kwicks > li {
-      height: 500px; } }
 
 #panel-1, #panel-2, #panel-3 {
   opacity: 0.5; }
@@ -311,4 +304,28 @@ div {
 #panel-4 {
   background-color: #bf7cc7; }
 
-/***************Mobile*******************/
+@media screen and (max-width: 480px) {
+  #fluid-example-container {
+    display: none; }
+
+  .top {
+    right: 0.1em; }
+
+  #mobile-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4em; }
+    #mobile-container ul {
+      margin: 0;
+      padding: 0; }
+    #mobile-container li {
+      width: 100%;
+      display: block;
+      padding: 1em 0.5em; }
+    #mobile-container p {
+      font-size: 0.5em;
+      margin: 1em 0;
+      line-height: 1; }
+    #mobile-container h2 {
+      font-size: 1em;
+      margin: 0; } }
