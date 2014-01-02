@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
   $("body").iealert({
-    support: "ie7"
+    support: "ie8"
   });
 });
 
