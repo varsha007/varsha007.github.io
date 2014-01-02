@@ -19,6 +19,13 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+ filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+ src='../img/port_bg.png',
+ sizingMethod='scale');
+
+ -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+ src='../img/port_bg.png',
+ sizingMethod='scale')";
 }
 img {
   max-width: 100%;
@@ -180,6 +187,13 @@ div {
 
 #panel-1, #panel-2, #panel-3 {
   opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 5-7 */
+  filter: alpha(opacity=50);
+  /* Netscape */
+  -moz-opacity: 0.5;
+  /* Safari 1.x */
+  -khtml-opacity: 0.5;
  &:hover { opacity:1;}
 }
 #panel-1 { background-color: #53b388; }
