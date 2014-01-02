@@ -19,9 +19,12 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
- filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(
  src='../img/port_bg.png',
- sizingMethod='scale');
+ sizingMethod='scale')";
 
  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
  src='../img/port_bg.png',
