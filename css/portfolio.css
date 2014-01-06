@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700");
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -122,6 +122,11 @@ img {
 ul, li {
   list-style-type: none; }
 
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
 body {
   color: white;
   font-size: 87.5%;
@@ -136,11 +141,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -ms-behavior: url("../backgroundsize.min.htc"); }
+  background-size: cover; }
 
 img {
   max-width: 100%; }
@@ -186,6 +187,10 @@ nav {
   nav a {
     color: #f3f3f3;
     display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
     padding: 5px 15px;
     text-decoration: none;
     font-size: 40px; }
@@ -214,13 +219,13 @@ ul {
   .objective img {
     width: 140px; }
 
-div {
+.scroll, .top {
   font-size: 40px; }
-  div span {
+  .scroll span, .top span {
     color: #0098c3; }
-    div span:hover {
+    .scroll span:hover, .top span:hover {
       opacity: 0.4; }
-  div h6 {
+  .scroll h6, .top h6 {
     margin: 0;
     font-size: 13px; }
 
@@ -238,6 +243,8 @@ div {
 
 #fluid-example-container {
   margin-bottom: 150px; }
+  #fluid-example-container h2 {
+    font-size: 32px; }
 
 #mobile-container {
   display: none; }
