@@ -127,6 +127,11 @@ img {
 ul, li {
   list-style-type: none; }
 
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
 body {
   color: white;
   font-size: 87.5%;
@@ -145,9 +150,6 @@ body {
 
 img {
   max-width: 100%; }
-
-div {
-  font-size: 30px; }
 
 header {
   margin: 40px 60px; }
@@ -334,6 +336,9 @@ ul {
 
   .top {
     right: 0.1em; }
+
+  div {
+    font-size: 30px; }
 
   #mobile-container {
     width: 100%;
