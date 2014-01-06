@@ -177,7 +177,7 @@ p {
   letter-spacing: 2px; }
   @media screen and (max-width: 480px) {
     p {
-      font-size: 1.2em;
+      font-size: 1.5em;
       margin: 0 0 1em;
       line-height: 1.2; } }
 
@@ -243,7 +243,8 @@ ul {
   box-sizing: border-box; }
   @media screen and (max-width: 480px) {
     #content {
-      height: 390px; } }
+      height: 450px;
+      padding: 1em 0.3em; } }
   #content h2 {
     font-size: 1.4em; }
 
@@ -356,9 +357,9 @@ ul {
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
     #mobile-container p {
-      font-size: 1.5em;
+      font-size: 0.9em;
       margin: 1em 0;
       line-height: 1; }
     #mobile-container h2 {
-      font-size: 2em;
+      font-size: 1.32em;
       margin: 0; } }
