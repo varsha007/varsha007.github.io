@@ -119,6 +119,9 @@ ul {
   text-align: center;
   padding: 1em 3em;
   height: 290px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
    @include media($mobile){
     height: 390px;
   }
@@ -214,22 +217,31 @@ ul {
     text-align: center;
     margin-bottom: 4em;
     display:block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     ul {
       margin: 0;
       padding: 0;
+      -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     }
     li {
       width: 100%;
       display: block;
       padding: 1em 0.5em;
+       -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     }
     p {
-     font-size: 0.5em;
+     font-size: 1.5em;
       margin: 1em 0;
       line-height: 1;
     }
     h2 {
-      font-size: 1em;
+      font-size: 2em;
       margin: 0;
     }
   }
