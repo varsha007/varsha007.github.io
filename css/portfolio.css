@@ -213,6 +213,8 @@ ul {
   margin: 0 auto; }
   ul li {
     display: inline; }
+    ul li h2 {
+      font-size: 2em; }
 
 .objective {
   margin: 120px 0 140px;
@@ -260,7 +262,6 @@ ul {
 
 .btn {
   background: #ebeded;
-  color: #3a75bc;
   line-height: 1.5;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -278,6 +279,8 @@ ul {
     opacity: 1;
     background: wheat;
     cursor: pointer; }
+  .btn a {
+    color: #3a75bc; }
 
 .top {
   color: white;
@@ -356,15 +359,16 @@ ul {
       box-sizing: border-box; }
     #mobile-container li {
       width: 100%;
+      height: 100%;
       display: block;
       padding: 1em 0.5em;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
     #mobile-container p {
-      font-size: 0.9em;
+      font-size: 0.8em;
       margin: 1em 0;
       line-height: 1; }
     #mobile-container h2 {
-      font-size: 1.32em;
+      font-size: 1.3em;
       margin: 0; } }
