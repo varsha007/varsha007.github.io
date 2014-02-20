@@ -145,8 +145,9 @@ ul {
 #mobile-container {
   display:none;
 }
-.btn {
+div li a {
   background: #ebeded;
+  color: #3a75bc;
   line-height: 1.5;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -165,7 +166,6 @@ ul {
     background: wheat;
     cursor: pointer;
   }
-  a {  color: #3a75bc;}
 }
 .top{
   color: white;
