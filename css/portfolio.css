@@ -249,8 +249,11 @@ ul {
     #content {
       height: 450px;
       padding: 1em 0.3em; } }
-  #content h2 {
-    font-size: 1.4em; }
+  #content strong {
+    font-size: 1.4em;
+    font-weight: 400;
+    display: block;
+    margin-top: 0.4em; }
 
 #fluid-example-container {
   margin-bottom: 150px; }
@@ -309,7 +312,7 @@ ul {
     .kwicks > li {
       height: 440px; } }
 
-#panel-1, #panel-2, #panel-3 {
+.panel-1, .panel-2, .panel-3 {
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   /* IE 5-7 */
@@ -318,16 +321,16 @@ ul {
   -moz-opacity: 0.5;
   /* Safari 1.x */
   -khtml-opacity: 0.5; }
-  #panel-1:hover, #panel-2:hover, #panel-3:hover {
+  .panel-1:hover, .panel-2:hover, .panel-3:hover {
     opacity: 1; }
 
-#panel-1 {
+.panel-1 {
   background-color: #53b388; }
 
-#panel-2 {
+.panel-2 {
   background-color: #5a69a9; }
 
-#panel-3 {
+.panel-3 {
   background-color: #c26468; }
 
 #panel-4 {

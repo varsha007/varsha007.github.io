@@ -131,8 +131,11 @@ ul {
     height: 450px;
     padding: 1em 0.3em;
   }
-  h2 {
+  strong {
     font-size: 1.4em;
+    font-weight: 400;
+    display: block;
+    margin-top: 0.4em;
   }
 }
 #fluid-example-container {
@@ -193,7 +196,7 @@ ul {
   }
 }
 
-#panel-1, #panel-2, #panel-3 {
+.panel-1, .panel-2, .panel-3 {
   opacity: 0.5;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   /* IE 5-7 */
@@ -204,9 +207,9 @@ ul {
   -khtml-opacity: 0.5;
  &:hover { opacity:1;}
 }
-#panel-1 { background-color: #53b388; }
-#panel-2 { background-color: #5a69a9; }
-#panel-3 { background-color: #c26468; }
+.panel-1 { background-color: #53b388; }
+.panel-2 { background-color: #5a69a9; }
+.panel-3 { background-color: #c26468; }
 #panel-4 { background-color: #bf7cc7; }
 
 
