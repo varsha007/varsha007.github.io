@@ -250,7 +250,7 @@ article {
         font-size: 1.2em; } }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       .bottom article {
-        font-size: 11px;
+        font-size: 9px;
         margin-left: 2em; } }
 
 .footer {
