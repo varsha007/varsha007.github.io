@@ -36,15 +36,14 @@ h1 {
   display: block;
   width: 600px;
   margin: 0 auto;
-  padding: 20px 0;
-  color: #fff; }
+  padding: 20px 0; }
 
 #navigation {
-  width: 888px;
+  width: 707px;
   margin: 0 auto; }
 
 #content {
-  width: 880px;
+  width: 699px;
   margin: 0 auto;
   height: auto;
   background: #fff;

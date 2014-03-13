@@ -1,8 +1,9 @@
 @import 'bourbon/bourbon';
 @import "neat/neat";
 
-$mobile: new-breakpoint(max-width 550px 4);
-$tablet: new-breakpoint(min-width 675px max-width 770px 6);
+$mobile: new-breakpoint(max-width 480px 4);
+$mobile-portrait: new breakpoint(max-width 320px 4);
+$tablet: new-breakpoint(min-width 481px max-width 768px 6);
 
 body {
   color: #ffffff;
@@ -13,6 +14,7 @@ body {
 }
 
 #main_container {
+  @include outer-container;
   background: url(../image/bg.png) repeat;
   width: 817px;
   height: 1050px;
@@ -89,6 +91,9 @@ header ul li {
       font-size: 1.2em;
       padding: 0.3em 0;
     }
+    @include media($tablet) {
+      font-size: 0.6em;
+    }
     &:last-child {
       color: #ffffff;
       border-right: 0;
@@ -161,7 +166,6 @@ header li a {
 
 article {
   text-align: center;
-  width: 40%;
   @include media($mobile) {
     width: 100%;
   }
@@ -177,7 +181,7 @@ article {
 
 .left {
   float:left;
-  width: 50%;
+  width: 51%;
   @include media($mobile) {
     float: none;
     width: 100%;
@@ -186,7 +190,7 @@ article {
 
 .right {
   float: right;
-    width: 50%;
+    width: 40%;
     @include media($mobile) {
     float: none;
     width: 100%;
@@ -274,15 +278,14 @@ article {
     margin-left: 3.2em;
     font-size: 0.81em;
     color: #636363;
-    width: inherit;
     @include media($mobile) {
       margin: 0 auto;
       text-align: center;
       font-size: 1.2em;
     }
      @include media($tablet){
-      font-size: 0.81em;
-      margin-left: 1.5em;
+      font-size: 0.6em;
+      margin-left: 2em;
     }
   }
 }
