@@ -1,0 +1,173 @@
+body, html, div, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial;
+  font-size: 12px;
+  color: #222;
+}
+
+.clear {
+  clear: both;
+}
+
+a img {
+  border: none;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  z-index: 2;
+  display: table;
+  border-left: 4px solid grey;
+  li {
+    float: left;
+    a {
+      background: grey;
+      color: #222;
+      display: block;
+      padding: 6px 15px;
+      text-decoration: none;
+      border-right: 1px solid #ececec;
+      &.selected {
+        background: darken(#ececec, 5%);
+        color: #000;
+      }
+    }
+  }
+}
+
+h1 {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #fff;
+}
+
+#navigation {
+  width: 707px;
+  margin: 0 auto;
+}
+
+#content {
+  width: 699px;
+  margin: 0 auto;
+  height: auto;
+  background: #fff;
+  border: 4px solid grey;
+  z-index: 1;
+  text-align: center;
+}
+
+#content ul {
+  width: 100%;
+  padding: 10px 0;
+  background: grey;
+  color: #ebeded;
+  li {
+    float: left;
+    margin-left: 10px;
+  }
+  button {
+   color: white;
+   background: #c6c6c6;
+   border: 0;
+   &:hover {
+    background: darken(#c6c6c6,15%);
+   }
+  }
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid grey;
+}
+
+td {
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  color: grey;
+  background-color:#fff;
+  padding: 0px 6px;
+}
+
+td h1, h2, h5 {
+  width: auto;
+  margin:0;
+  padding: 0;
+  color: inherit;
+}
+
+td {
+  h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px 0 0 3px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
+
+td h2, h5 {
+  text-align: right;
+  color: #A8A8A8;
+}
+
+td h5 {
+  padding: 0;
+    font-size: 9px;
+}
+
+.td_box {
+  width: 50px;
+}
+
+.flag {
+  margin:0;
+  padding: 0;
+  width: 35px;
+}
+
+.name {
+  width: 150px;
+  padding: 10px 10px 5px 5px;
+  text-align: left;
+  h1 {
+    font-size: 14px;
+    padding:0;
+  }
+  h2 {
+    font-size: 12px;
+    padding: 0;
+    text-align: left;
+  }
+  h5 {
+    text-align: left;
+    padding-bottom: 4px;
+  }
+}
+
+
+.td_color {
+  background-color: #ccc;
+  text-align: center;
+  padding: 5px;
+  border-right: 1px solid white;
+  h1 { text-align: center; }
+  h5 {
+    text-align: center;
+    padding-bottom: 2px;
+  }
+}
+
+

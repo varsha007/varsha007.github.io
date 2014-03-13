@@ -1,0 +1,286 @@
+@import 'bourbon/bourbon';
+@import "neat/neat";
+
+$mobile: new-breakpoint(max-width 480px 4);
+$tablet: new-breakpoint(min-width 481px max-width 768px 6);
+
+body {
+  color: #ffffff;
+  font-size: 87.5%; /* Base font size: 14px */
+  font-family: "Verdana", sans-serif;
+  line-height: 1.429;
+  margin: 0;
+}
+
+#main_container {
+  background: url(../image/bg.png) repeat;
+  width: 846px;
+  height: 1050px;
+  margin: 0 auto;
+ @include media($mobile){
+      width: 100%;
+      height: 100%;
+  }
+   @include media($tablet){
+      width: 100%;
+      height: 100%;
+  }
+}
+
+#wrapper {
+  height: auto;
+  background: #000000;
+  margin: 0 2em;
+  @include media($mobile){
+    text-align: center;
+    margin: 0;
+  }
+    @include media($tablet){
+    text-align: center;
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+ margin: 0;
+ clear: both;
+ padding: 0;
+ @include media($mobile){
+  width: 100%;
+}
+  li {
+    list-style: none;
+    display: block;
+    cursor: pointer;
+    float: left;
+    @include media($mobile){
+      float: none;
+    }
+  }
+}
+
+header ul li {
+ @include media($mobile){
+    float: left;
+  }
+}
+
+.navbar {
+  background: #1b2226;
+  border-top: 1px solid #85a5b1;
+  height: 1.6em;
+  padding: 0.2em 0.5em;
+  @include media($mobile) {
+    height: auto;
+  }
+  li {
+    color: #85a5b1;
+    padding: 0em 0.5em;
+    border-right: 1px solid #85a5B1;
+    font-size: 0.8em;
+    @include media($mobile) {
+      border-bottom: 1px solid #85a5b1;
+      border-right: 0;
+      font-size: 1.2em;
+      padding: 0.3em 0;
+    }
+    &:last-child {
+      color: #ffffff;
+      border-right: 0;
+      @include media($mobile) {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+header li a {
+  display: block;
+  width: 80px;
+  height: 54px;
+  margin-left: 1px;
+  background-image: url('../image/menu.png');
+}
+
+.poker a {
+  background-position: 0px 0;
+  &:hover {
+    background-position: 0px -58px;
+  }
+}
+
+.casino a {
+  background-position: 249px 0;
+  &:hover {
+    background-position: 249px -58px;
+  }
+}
+
+.sports a {
+  background-position: 165px 0;
+  &:hover {
+    background-position: 166px -58px;
+  }
+}
+
+.live a {
+  background-position: 82px 0;
+  &:hover {
+    background-position: 82px -58px;
+  }
+}
+
+.cta {
+ width: 100%;
+ text-align: center;
+ height: auto;
+  button {
+    background-image: url('../image/cta.png');
+    width: 15.85em;
+    height: 4.4em;
+    position: relative;
+    bottom: 3.2em;
+    left: 0.16em;
+    border: 0;
+    background-color: transparent;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.cta.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='cta.png', sizingMethod='scale')";
+    &:hover {
+      background-position: 0 -4.958em;
+    }
+  }
+}
+
+article {
+  text-align: center;
+  width: 40%;
+  @include media($mobile) {
+    width: 100%;
+  }
+  h1 {
+    font-weight: bold;
+     margin: 1.3em 0 0;
+   }
+  li {
+    float: none;
+    font-size: 1em;
+  }
+}
+
+.left {
+  float:left;
+  @include media($mobile) {
+    float: none;
+  }
+}
+
+.right {
+  float: right;
+    @include media($mobile) {
+    float: none;
+  }
+}
+
+.content {
+  padding: 0 1.2em;
+  margin: -2em 0 0;
+  width: 100%;
+  height: auto;
+  .status {
+    padding: 1em 0 0 1em;
+    height: 11em;
+    @include media($tablet) {
+      height: auto;
+    }
+     @include media($mobile) {
+      padding-left: 10%;
+    }
+    li {
+      float:left;
+      width: 242px;
+      height: 118px;
+      background-image: url(../image/sections.png);
+      @include media($mobile) {
+        margin-bottom: 1em;
+      }
+      @include media($tablet) {
+        float: none;
+        margin: 0 auto 1em;
+      }
+    }
+    .download_poker {
+      background-position: 0 0;
+      &:hover {
+        background-position: 0 118px;
+      }
+    }
+    .play_casino {
+      background-position: -242px 0;
+      &:hover {
+        background-position: -242px 118px;
+      }
+    }
+    .bet_sports {
+      background-position: -480px 0;
+      &:hover {
+        background-position: -480px 118px;
+      }
+    }
+  }
+}
+
+.bottom {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #85a5b1;
+  padding: 1.5em 0;
+  clear: both;
+  header {
+    width: inherit;
+    text-align: center;
+    background-color: #1b2226;
+    padding: 0.3em 0;
+    margin-bottom: 1em;
+    h4 {
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+
+  ul {
+    height: 8em;
+    @include media($mobile) {
+      height: auto;
+    }
+  }
+
+  article {
+    text-align: left;
+    margin-left: 3.2em;
+    font-size: 0.81em;
+    color: #636363;
+    width: inherit;
+    @include media($mobile) {
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.2em;
+    }
+     @include media($tablet){
+      font-size: 0.11em
+    }
+  }
+}
+
+.footer {
+  border-top: 0;
+  ul { clear: none; }
+  li:last-child { color: #85a5b1; }
+}
+
