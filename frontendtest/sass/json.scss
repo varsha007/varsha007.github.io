@@ -79,7 +79,12 @@ h1 {
    &:hover {
     background: darken(#c6c6c6,15%);
    }
+   &.selected {
+    background: darken(#ececec, 5%);
+    color: #000;
+   }
   }
+
 }
 table{
   border-collapse:collapse;
