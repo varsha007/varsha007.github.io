@@ -2,6 +2,8 @@
 
 $(document).ready(function() {
 
+/***************JQuery ajax requests don’t work with IE8 and IE9.*******************/
+
   function driver_table(data) {
 
   $('table tbody').append(
@@ -58,6 +60,7 @@ $(document).ready(function() {
   });
 
 /************Server Provides Sorted Json Data****************/
+
   $('#content li button').click(function(){
     $('#content li button').removeClass('selected');
     $(this).addClass('selected');

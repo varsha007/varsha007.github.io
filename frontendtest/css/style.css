@@ -133,11 +133,11 @@ header li a {
   height: auto; }
   .cta button {
     background-image: url("../image/cta.png");
-    width: 15.85em;
-    height: 4.4em;
+    width: 165px;
+    height: 47px;
     position: relative;
-    bottom: 3.2em;
-    left: 0.16em;
+    bottom: 32px;
+    left: 2px;
     border: 0;
     background-color: transparent;
     background-size: cover;
@@ -146,7 +146,7 @@ header li a {
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.cta.png', sizingMethod='scale');
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='cta.png', sizingMethod='scale')"; }
     .cta button:hover {
-      background-position: 0 -4.958em; }
+      background-position: 0 -52px; }
 
 article {
   text-align: center; }
@@ -177,13 +177,13 @@ article {
       width: 100%; } }
 
 .content {
-  padding: 0 1.2em;
   margin: -2em 0 0;
   width: 100%;
   height: auto; }
   .content .status {
-    padding: 1em 0;
+    padding: 1em;
     height: 11em;
+    clear: both;
     width: 100%; }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       .content .status {
@@ -250,7 +250,7 @@ article {
         font-size: 1.2em; } }
     @media screen and (min-width: 481px) and (max-width: 768px) {
       .bottom article {
-        font-size: 0.6em;
+        font-size: 11px;
         margin-left: 2em; } }
 
 .footer {
