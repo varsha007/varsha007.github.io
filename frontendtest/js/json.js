@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
   function driver_table(data) {
-  alert('inside table');
+
   $('table tbody').append(
     '<tr>' + '<td class="td_box">' +
       "<h1>"+data['position']+'&#176;'+"</h1>" +
@@ -58,6 +58,10 @@ $(document).ready(function() {
   });
 
 /************Server Provides Sorted Json Data****************/
+  $('#content li button').click(function(){
+    $('#content li button').removeClass('selected');
+    $(this).addClass('selected');
+  });
 
   $('#content li .clasification').click(function() {
     $('table tbody').empty();
