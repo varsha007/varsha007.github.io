@@ -16,11 +16,11 @@ body {
   width: 817px;
   height: 1050px;
   margin: 0 auto; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     #main_container {
       width: 100%;
       height: 100%; } }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (min-width: 675px) and (max-width: 770px) {
     #main_container {
       width: 100%;
       height: 100%; } }
@@ -29,11 +29,11 @@ body {
   height: auto;
   background: #000000;
   margin: 0 2em; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     #wrapper {
       text-align: center;
       margin: 0; } }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (min-width: 675px) and (max-width: 770px) {
     #wrapper {
       text-align: center;
       margin: 0; } }
@@ -46,7 +46,7 @@ ul {
   clear: both;
   padding: 0;
   width: 100%; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     ul {
       width: 100%; } }
   ul li {
@@ -54,11 +54,11 @@ ul {
     display: block;
     cursor: pointer;
     float: left; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 550px) {
       ul li {
         float: none; } }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   header ul li {
     float: left; } }
 
@@ -67,7 +67,7 @@ ul {
   border-top: 1px solid #85a5b1;
   height: 1.6em;
   padding: 0.2em 0.5em; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .navbar {
       height: auto; } }
   .navbar li {
@@ -75,7 +75,7 @@ ul {
     padding: 0em 0.5em;
     border-right: 1px solid #85a5B1;
     font-size: 0.8em; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 550px) {
       .navbar li {
         border-bottom: 1px solid #85a5b1;
         border-right: 0;
@@ -84,7 +84,7 @@ ul {
     .navbar li:last-child {
       color: #ffffff;
       border-right: 0; }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 550px) {
         .navbar li:last-child {
           border-bottom: 0; } }
 
@@ -139,7 +139,7 @@ header li a {
 article {
   text-align: center;
   width: 40%; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     article {
       width: 100%; } }
   article h1 {
@@ -152,7 +152,7 @@ article {
 .left {
   float: left;
   width: 50%; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .left {
       float: none;
       width: 100%; } }
@@ -160,7 +160,7 @@ article {
 .right {
   float: right;
   width: 50%; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .right {
       float: none;
       width: 100%; } }
@@ -174,21 +174,22 @@ article {
     padding: 1em 0;
     height: 11em;
     width: 100%; }
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 675px) and (max-width: 770px) {
       .content .status {
         height: auto; } }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 550px) {
       .content .status {
-        padding-left: 10%; } }
+        padding-left: 10%;
+        display: none; } }
     .content .status li {
       float: left;
       width: 242px;
       height: 118px;
       background-image: url(../image/sections.png); }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 550px) {
         .content .status li {
           margin-bottom: 1em; } }
-      @media screen and (min-width: 481px) and (max-width: 768px) {
+      @media screen and (min-width: 675px) and (max-width: 770px) {
         .content .status li {
           float: none;
           margin: 0 auto 1em; } }
@@ -223,7 +224,7 @@ article {
   .bottom ul {
     width: 100%;
     height: 8em; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 550px) {
       .bottom ul {
         height: auto; } }
   .bottom article {
@@ -232,18 +233,31 @@ article {
     font-size: 0.81em;
     color: #636363;
     width: inherit; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 550px) {
       .bottom article {
         margin: 0 auto;
         text-align: center;
         font-size: 1.2em; } }
-    @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (min-width: 675px) and (max-width: 770px) {
       .bottom article {
-        font-size: 0.11em; } }
+        font-size: 0.81em;
+        margin-left: 1.5em; } }
 
 .footer {
   border-top: 0; }
   .footer ul {
     clear: none; }
   .footer li:last-child {
-    color: #85a5b1; }
+    color: #85a5b1;
+    border: 0; }
+  .footer .right li {
+    float: right;
+    border-left: 1px solid;
+    border-right: 0; }
+    .footer .right li:last-child {
+      border: 0; }
+    @media screen and (max-width: 550px) {
+      .footer .right li {
+        float: none;
+        border-left: 0;
+        border-top: 1px solid; } }

@@ -1,8 +1,8 @@
 @import 'bourbon/bourbon';
 @import "neat/neat";
 
-$mobile: new-breakpoint(max-width 480px 4);
-$tablet: new-breakpoint(min-width 481px max-width 768px 6);
+$mobile: new-breakpoint(max-width 550px 4);
+$tablet: new-breakpoint(min-width 675px max-width 770px 6);
 
 body {
   color: #ffffff;
@@ -207,6 +207,7 @@ article {
     }
      @include media($mobile) {
       padding-left: 10%;
+      display: none;
     }
     li {
       float:left;
@@ -280,7 +281,8 @@ article {
       font-size: 1.2em;
     }
      @include media($tablet){
-      font-size: 0.11em
+      font-size: 0.81em;
+      margin-left: 1.5em;
     }
   }
 }
@@ -288,6 +290,19 @@ article {
 .footer {
   border-top: 0;
   ul { clear: none; }
-  li:last-child { color: #85a5b1; }
+  li:last-child { color: #85a5b1; border: 0; }
+  .right li {
+    float: right;
+    border-left: 1px solid;
+    border-right: 0;
+    &:last-child {
+      border: 0;
+    }
+    @include media($mobile){
+      float: none;
+      border-left:0;
+      border-top: 1px solid;
+    }
+  }
 }
 
