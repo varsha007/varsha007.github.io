@@ -237,8 +237,8 @@ article {
 .betting {
   width: 100%;
   font-size: 12px;
-  margin: 0 auto;
-  height: 12em;
+  margin: 0 auto 3em;
+  overflow: auto;
   padding-left: 10px; }
   .betting .left {
     width: auto; }
