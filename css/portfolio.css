@@ -302,7 +302,7 @@ div li a {
   text-align: center; }
 
 .kwicks {
-  height: 350px; }
+  height: 430px; }
   @media screen and (min-width: 481px) and (max-width: 768px) {
     .kwicks {
       height: 440px; } }
@@ -314,7 +314,7 @@ div li a {
     margin: 0; }
 
 .kwicks > li {
-  height: 350px;
+  height: 430px;
   text-align: center; }
   @media screen and (min-width: 481px) and (max-width: 768px) {
     .kwicks > li {
