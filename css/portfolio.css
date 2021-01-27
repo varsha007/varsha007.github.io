@@ -182,14 +182,14 @@ a {
 
 p {
   font-size: 1.3em;
-  margin: 0 0 2em;
+  margin: 0 0 3em;
   color: #ebeded;
   font-family: 'PT Sans', sans-serif;
   letter-spacing: 2px; }
   @media screen and (max-width: 480px) {
     p {
       font-size: 1.5em;
-      margin: 0 0 1em;
+      margin: 0 0 3em;
       line-height: 1.2; } }
 
 nav {
